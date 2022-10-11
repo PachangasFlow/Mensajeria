@@ -12,6 +12,7 @@ MarkupSafe==2.1.1
 mysql-connector-python==8.0.30
 mysqlclient==2.1.1
 platformdirs==2.5.2
+protobuf==3.20.1
 pycodestyle==2.9.1
 toml==0.10.2
 virtualenv==20.16.5
