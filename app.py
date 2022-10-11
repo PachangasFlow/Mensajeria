@@ -90,7 +90,7 @@ def activar_cuenta():
     username = datos['username']
     codver = datos['codverificacion']
     resultado = controlador.activar_usuario(username, codver)
-    if resultado:
+    if resultado=='SI':
         flash('Cuenta Activada Satisfactoriamente')
     else:
         flash('Error en Activacion')
@@ -222,12 +222,6 @@ def index():
 def login():
     session.clear()
     return render_template('login.html')
-
-
-@app.route('/login1')
-def login1():
-    return render_template('login1.html')
-
 
 @app.route('/registro')
 def registro():
